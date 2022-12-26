@@ -9,9 +9,9 @@ import REBIRTH from 'assets/collections/1/skills/REBIRTH.svg'
 import VIRGIL from 'assets/collections/1/skills/VIRGIL.png'
 import VOODOO from 'assets/collections/1/skills/VOODOO.svg'
 // SKILLPOINT
-import SKILLPOINT from 'assets/collections/1/skills/SKILLPOINT.svg'
+// import SKILLPOINT from 'assets/collections/1/skills/SKILLPOINT.svg'
 import { Subheader } from 'components/Layout/Text'
-import { customTheme } from './theme'
+// import { customTheme } from './theme'
 
 interface SkillTreeConfig {
   TITLE: string
