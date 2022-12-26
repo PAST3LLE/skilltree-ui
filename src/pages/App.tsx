@@ -1,7 +1,9 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-const Home = lazy(() => import(/* webpackPrefetch: true,  webpackChunkName: "HOME" */ 'components/Home'))
+const SkilltreePage = lazy(() =>
+  import(/* webpackPrefetch: true,  webpackChunkName: "SkilltreePage" */ 'pages/Skilltree')
+)
 const Header = lazy(() => import(/* webpackPrefetch: true,  webpackChunkName: "HEADER" */ 'components/Header'))
 const Navigation = lazy(() => import(/* webpackChunkName: "NAVIGATION" */ 'components/Navigation'))
 const Popups = lazy(() => import(/* webpackPrefetch: true,  webpackChunkName: "POPUPS" */ 'components/Popups'))
@@ -21,8 +23,7 @@ export default function App() {
       <Navigation mobileHide />
 
       <Routes>
-        <Route path={`/`} element={<Home />} />
-
+        <Route path={`/`} element={<SkilltreePage />} />
         <Route path="/404" element={<NotFound />} />
       </Routes>
 

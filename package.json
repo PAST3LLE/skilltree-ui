@@ -163,6 +163,7 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@react-spring/web": "^9.4.3"
+    "@react-spring/web": "^9.4.3",
+    "beautiful-skill-tree": "^1.7.1"
   }
 }
